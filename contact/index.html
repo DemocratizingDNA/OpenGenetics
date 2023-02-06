@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<style>
+p {
+        font-family: MessinaSans, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif;
+        width: 33.33%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+.button {
+  width: 80px;
+  height: 30px;
+}
+.svg--icon {
+  width: 0.8em;
+  height: 0.8em;
+}
+.type-h2 {
+  padding: 20px;
+}
+.contact-btn {
+        display: inline-block;
+        text-align: center;
+        padding: 14px 40px;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgb(214, 74, 197);
+        color: #fff;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .contact-btn:hover {
+        background-color: #fff;
+        color: hotpink;
+        transform: translateY(-3px);
+        box-shadow: 0px 15px 20px hotpink;
+      }
+      .contact-section {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .contact-info {
+      margin-bottom: 50px;
+    }
+
+    .contact-info h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .contact-form {
+      display: inline-block;
+      text-align: left;
+    }
+
+    .form-group {
+      margin-bottom: 30px;
+    }
+
+    .form-group label {
+      font-size: 18px;
+      display: block;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .form-group textarea {
+      height: 150px;
+    }
+
+    .form-group input[type="submit"] {
+      width: 100%;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .contact-info-item {
+      display: inline-block;
+      margin: 0 50px;
+      text-align: center;
+    }
+
+    .contact-info-item h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info-item p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info-item i {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #4CAF50;
+    }
+
+    .btn-animate {
+      animation: pulse 1s infinite;
+    }
+    .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 40%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card-header {
+  background-color: #5c6ac4;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.email i,
+.phone i {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.email-link,
+.phone-link {
+  font-size: 20px;
+  text-decoration: none;
+  color: #5c6ac4;
+  transition: all 0.3s ease-in-out;
+}
+
+.email-link:hover,
+.phone-link:hover {
+  color: #fff;
+  background-color: #5c6ac4;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+</style>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+  <head>
+    <title>Contact Us</title>
+    <meta charset="utf-8" />
+    <link
+     rel="icon"
+     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-30 -40 80 80' fill='hotpink'>
+      <path d='M -8.44 20.409 Z A 14.2 14.2 90 0 1 19.95 -29.9 C 8.91 -37.862 -1.182 -42.709 -2.779 -32.341 C -5.114 -20.115 -12.876 -23.56 -22.378 -11.288 C -28.073 -3.804 -34.075 1.418 -20.708 6.829 C -11.524 9.994 -8.347 8.512 -8.44 20.409 A 10 10 90 0 0 19.95 -29.9 C 30.404 -21.981 20.507 -14.308 33.965 -10.912 C 45.633 -7.937 41.204 -0.488 31.127 9.038 C 25.851 13.383 20.345 9.148 18.443 21.193 C 15.793 36.57 -8.241 25.77 -8.44 20.409'/>
+     </svg>"
+    />
+  </head>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#fff0fc">
+    <link rel="stylesheet" href="./files/open.css">
+
+    <!-- meta -->
+    <meta name="generator" content="SEOmatic">
+    <meta name="keywords" content="A Cutting-Edge Embryo Selection Genomics Company, machine learning, biological computation, fertility, polygenic scores">
+    <meta name="description" content="Line 1">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="robots" content="all">
+    <meta content="OpenGenetics" property="fb:profile_id">
+    <meta content="en_US" property="og:locale">
+    <meta content="OpenGenetics" property="og:site_name">
+    <meta content="website" property="og:type">
+    <meta content="https://opengenetics.co/" property="og:url">
+    <meta content="1200" property="og:image:width">
+    <meta content="630" property="og:image:height">
+    <link href="https://opengenetics.co/" rel="canonical">
+    <link href="https://opengenetics.co/" rel="home">
+
+    <body class="site vsc-initialized" id="site" data-color-theme="dark" style="font-family: MessinaSans, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif; font-weight: 400;">
+      <header class="site-header" role="banner">
+        <div class="masthead">
+          <div class="header-content d-flex justify-end">
+            <div style="display: inline-block; margin-right: 20px">
+              <a style="text-decoration: none; font-weight: 900" href="/services">Services</a>
+            </div>
+            <div style="display: inline-block; margin-right: 20px">
+              <a style="text-decoration: none; font-weight: 900" href="/about">About</a>
+            </div>
+            <div style="display: inline-block">
+              <a style="text-decoration: none; font-weight: 900" href="/contact">Contact</a>
+            </div>
+          </div>
+          <div class="header" style="display: flex; align-items: flex-start;">
+            <div class="d-flex align-items-center">
+              <svg viewBox="-5 -40 90 90" height="50" width="80" fill=#ffffff>
+                  <path d="M -8.44 20.409 Z A 14.2 14.2 90 0 1 19.95 -29.9 C 8.91 -37.862 -1.182 -42.709 -2.779 -32.341 C -5.114 -20.115 -12.876 -23.56 -22.378 -11.288 C -28.073 -3.804 -34.075 1.418 -20.708 6.829 C -11.524 9.994 -8.347 8.512 -8.44 20.409 A 10 10 90 0 0 19.95 -29.9 C 30.404 -21.981 20.507 -14.308 33.965 -10.912 C 45.633 -7.937 41.204 -0.488 31.127 9.038 C 25.851 13.383 20.345 9.148 18.443 21.193 C 15.793 36.57 -8.241 25.77 -8.44 20.409" />
+                </svg>
+                <div style="display: flex; flex-direction: column; justify-content: center;">
+                    <strong style="font-size: 36px; margin-bottom: 10px;">
+                        <a href="https://opengenetics.co" style="text-decoration: none; color: inherit;">OpenGenetics</a>
+                        <i style="font-size: 22px;">&nbsp;&nbsp;&nbsp;&nbsp;Democratizing DNA&nbsp;</i>
+                    </strong>
+                </div>                   
+            </div>
+        </header>
+    </body>
+
+      <section class="section section--offset-y section--featureText " data-color-theme="light-pink">
+          <div class="text-stack">
+          </div>
+          <div class="text-stack">
+            <div style="text-align: center; font-family: MessinaSans, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif; font-size: 20px;">
+                <p>We strive to provide the best service possible. If you have any questions or concerns, if you'd like to make a donation, or even if you'd just like to chat, please don't hesitate to contact us.</p>
+              </div>
+            <div class="text-stack__content flow">
+                <div class="container">
+                    <div class="card">
+                      <div class="card-header">Contact Us</div>
+                      <div class="card-body">
+                        <p1>We'd love to hear from you! Send us a message here to use our service, for questions or comments, or to join our team:</p1>
+                        <div class="contact-info">
+                          <div class="email">
+                            <i class="fas fa-envelope"></i>
+                            <a class="email-link" href="mailto:opengenetics@protonmail.com">opengenetics@protonmail.com</a>
+                          </div>
+                          <div class="spacer">
+                            <i class="fas fa-envelope"></i>
+                            <a class="spacer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                          </div>
+                          <div class="phone">
+                            <i class="fas fa-phone"></i>
+                            <a class="phone-link" href="tel:+16503523804">650-352-3804</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                     
+      </section>
+
+
+
+      <strong class="type-meta">
+    </main>
+    <div class="sticky-footer d-none d-flex@lg items-center justify-between sticky-footer--stealth" data-module="StickyFooter" data-module-options="{ &quot;isHomepage&quot;: &quot;true&quot; }" data-color-theme="dark">
+      <div class="sticky-footer__branding d-flex items-center" data-sticky-footer-branding="">
+        <a class="rel w100" href="https://opengenetics.co/" title="Go to the homepage">
+          <span class="sticky-footer__branding-large d-block"></span>
+          <span class="sticky-footer__branding-large d-block"></span>
+          <footer style="display: flex; justify-content: center; align-items: center; height: 50px;">
+            <svg viewBox="-5 -40 90 90" height="50" width="80" fill=#ffffff>
+              <path d="M -8.44 20.409 Z A 14.2 14.2 90 0 1 19.95 -29.9 C 8.91 -37.862 -1.182 -42.709 -2.779 -32.341 C -5.114 -20.115 -12.876 -23.56 -22.378 -11.288 C -28.073 -3.804 -34.075 1.418 -20.708 6.829 C -11.524 9.994 -8.347 8.512 -8.44 20.409 A 10 10 90 0 0 19.95 -29.9 C 30.404 -21.981 20.507 -14.308 33.965 -10.912 C 45.633 -7.937 41.204 -0.488 31.127 9.038 C 25.851 13.383 20.345 9.148 18.443 21.193 C 15.793 36.57 -8.241 25.77 -8.44 20.409" />
+            </svg>
+            <span class="sticky-footer__branding-large d-block">
+            </span>
+          </footer>
+        </a>
+      </div>
+      <div class="sticky-footer__nav d-flex" id="main-nav" tabindex="-1">
+        <nav class="h-nav">
+          <ul class="h-nav__list">
+            <li class="h-nav__item">
+              <a class="h-nav__link" href="https://opengenetics.co/services">Our Services</a>
+            </li>
+            <li class="h-nav__item">
+              <a class="h-nav__link" href="https://opengenetics.co/about">About Us</a>
+            </li>
+            <li class="h-nav__item">
+              <a class="h-nav__link" href="https://opengenetics.co/team">Join Us</a>
+            </li>
+            <li class="h-nav__item-separator" aria-hidden="true"></li>
+            <li class="h-nav__item">
+              <a class="h-nav__link" href="https://opengenetics.co/contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <footer class="footer d-flex@md justify-between items-end" data-color-theme="dark">
+      <div class="footer__spotlight d-flex items-end">
+        <div class="footer__slogan">
+          <strong>Democratizing DNA</strong>
+        </div>
+      </div>
+      <div class="footer__contact-info type-meta d-flex items-end">
+        <div class="flex-blocks flex-blocks--flush-right justify-end">
+          <div class="d-flex flex-col justify-between flow">
+            <p2 style="font-size: 16px;">OpenGenetics@protonmail.com<br>650-352-3804</p2>
+            <div class="footer__address">
+              <p1>OpenGenetics <br>
+              </p1>
+              <p1>Chicago, IL 60654<br>
+              </p1>
+              <p1>United States</p1>
+            </div>
+            <div>© 2023 OpenGenetics</div>
+          </div>
+          <div class="d-flex flex-col justify-between">
+            <nav class="v-nav">
+              <ul class="v-nav__list">
+                    <br><br><br>
+                <li class="v-nav__item">
+                  <a class="v-nav__link v-nav__link--decorative" href="https://www.facebook.com/opengenetics" rel="noopener noreferrer" target="_blank">Facebook</a>
+                </li>
+                <li class="v-nav__item">
+                  <a class="v-nav__link v-nav__link--decorative" href="https://twitter.com/opengenetics" rel="noopener noreferrer" target="_blank">Twitter</a>
+                </li>
+            </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var emailButton = document.querySelector('#email-button');
+  var phoneButton = document.querySelector('#phone-button');
+
+  if (emailButton) {
+    emailButton.addEventListener('mouseover', function() {
+      emailButton.style.backgroundColor = '#f2f2f2';
+    });
+    emailButton.addEventListener('mouseout', function() {
+      emailButton.style.backgroundColor = 'white';
+    });
+    emailButton.addEventListener('click', function() {
+      window.open('mailto:info@example.com');
+    });
+  }
+
+  if (phoneButton) {
+    phoneButton.addEventListener('mouseover', function() {
+      phoneButton.style.backgroundColor = '#f2f2f2';
+    });
+    phoneButton.addEventListener('mouseout', function() {
+      phoneButton.style.backgroundColor = 'white';
+    });
+    phoneButton.addEventListener('click', function() {
+      window.open('tel:+1-555-555-5555');
+    });
+  }
+});
+</script>
