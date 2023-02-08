@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+    <style>
+        body {
+          font-family: MessinaSans, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif;
+          font-weight: 800;
+        }
+        .card {
+          width: 70%;
+          background-color: rgba(255, 152, 248, 0.468);
+          padding: 20px;
+          text-align: center;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          border-radius: 10px;
+          margin: 20px auto;
+        }
+        h2 {
+          color: rgb(52, 0, 52);
+          font-size: 36px;
+        }
+        ul {
+            list-style-type: square;
+            margin-left: 50px;
+            text-align: left;
+            color: #0f001f;
+          font-family: MessinaSans, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif; font-weight: 400;"
+        }
+        .iframe-container {
+          position: relative;
+          padding-bottom: 65.25%;
+          padding-top: 30px;
+          height: 0;
+          overflow: hidden;
+        }
+        .iframe-container iframe {
+          position: absolute;
+          top:0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .region {
+            background-color: #e8bcff;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 340px;
+             overflow: auto;
+        }
+        .post-button {
+        background-color: #af08dd;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        }
+
+        .post-button:hover {
+        box-shadow: 0 12px 16px 0 rgba(94, 0, 153, 0.24), 0 17px 50px 0 rgba(82, 0, 125, 0.13);
+        transform: translateY(-2px);
+        }
+    </style>
+    <head>
+      <title>Create New Post</title>
+      <meta charset="utf-8" />
+      <link
+       rel="icon"
+       href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-30 -40 80 80' fill='hotpink'>
+        <path d='M -8.44 20.409 Z A 14.2 14.2 90 0 1 19.95 -29.9 C 8.91 -37.862 -1.182 -42.709 -2.779 -32.341 C -5.114 -20.115 -12.876 -23.56 -22.378 -11.288 C -28.073 -3.804 -34.075 1.418 -20.708 6.829 C -11.524 9.994 -8.347 8.512 -8.44 20.409 A 10 10 90 0 0 19.95 -29.9 C 30.404 -21.981 20.507 -14.308 33.965 -10.912 C 45.633 -7.937 41.204 -0.488 31.127 9.038 C 25.851 13.383 20.345 9.148 18.443 21.193 C 15.793 36.57 -8.241 25.77 -8.44 20.409'/>
+       </svg>"
+      />
+    </head>
+    <head>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="theme-color" content="#fff0fc">
+      <link rel="stylesheet" href="./files/open.css">
+  
+      <!-- meta -->
+      <meta name="generator" content="SEOmatic">
+      <meta name="keywords" content="A Cutting-Edge Embryo Selection Genomics Company, machine learning, biological computation, fertility, polygenic scores">
+      <meta name="description" content="Line 1">
+      <meta name="referrer" content="no-referrer-when-downgrade">
+      <meta name="robots" content="all">
+      <meta content="OpenGenetics" property="fb:profile_id">
+      <meta content="en_US" property="og:locale">
+      <meta content="OpenGenetics" property="og:site_name">
+      <meta content="website" property="og:type">
+      <meta content="https://opengenetics.co/" property="og:url">
+      <meta content="1200" property="og:image:width">
+      <meta content="630" property="og:image:height">
+      <link href="https://opengenetics.co/" rel="canonical">
+      <link href="https://opengenetics.co/" rel="home">
+  
+      <body class="site vsc-initialized" id="site" data-color-theme="dark" style="font-family: MessinaSans, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif; font-weight: 400;">
+        <header class="site-header" role="banner">
+          <div class="masthead">
+            <div class="header-content d-flex justify-end">
+              <div style="display: inline-block; margin-right: 20px">
+                <a style="text-decoration: none; font-weight: 900" href="/services">Services</a>
+              </div>
+              <div style="display: inline-block; margin-right: 20px">
+                <a style="text-decoration: none; font-weight: 900" href="/about">About</a>
+              </div>
+              <div style="display: inline-block">
+                <a style="text-decoration: none; font-weight: 900" href="/contact">Contact</a>
+              </div>
+            </div>
+            <div class="header" style="display: flex; align-items: flex-start;">
+              <div class="d-flex align-items-center">
+                <svg viewBox="-5 -40 90 90" height="50" width="80" fill=#ffffff>
+                    <path d="M -8.44 20.409 Z A 14.2 14.2 90 0 1 19.95 -29.9 C 8.91 -37.862 -1.182 -42.709 -2.779 -32.341 C -5.114 -20.115 -12.876 -23.56 -22.378 -11.288 C -28.073 -3.804 -34.075 1.418 -20.708 6.829 C -11.524 9.994 -8.347 8.512 -8.44 20.409 A 10 10 90 0 0 19.95 -29.9 C 30.404 -21.981 20.507 -14.308 33.965 -10.912 C 45.633 -7.937 41.204 -0.488 31.127 9.038 C 25.851 13.383 20.345 9.148 18.443 21.193 C 15.793 36.57 -8.241 25.77 -8.44 20.409" />
+                  </svg>
+                  <div style="display: flex; flex-direction: column; justify-content: center;">
+                      <strong style="font-size: 36px; margin-bottom: 10px;">
+                          <a href="https://opengenetics.co" style="text-decoration: none; color: inherit;">OpenGenetics</a>
+                          <i style="font-size: 22px;">&nbsp;&nbsp;&nbsp;&nbsp;Democratizing DNA&nbsp;</i>
+                      </strong>
+                  </div>                   
+              </div>
+          </header>
+<head><div class="region">
+    <div class="card">
+        <h2><strong>Rules</strong></h2>
+        <ul>
+          <li>Be respectful</li>
+          <li>Do not edit other people's writing</li>
+          <li>Use an indentation to respond to someone else's post</li>
+          <li>You may choose to sign your name or alias (e.g., [content] -Your Name) or post anonymously</li>
+          <br>
+        </ul>
+        <a href="https://opengenetics.co/forum">
+            <button class="post-button">Back to View Only</button>
+          </a>
+                </div>
+</div></head>
+  <head>
+    <style>
+      .iframe-container {
+        position: relative;
+        padding-bottom: 65.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+      }
+      
+      .iframe-container iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="iframe-container">
+      <iframe src="https://docs.google.com/document/d/1aIfFyGkYQpSUS8-wsfbsjXvzDLUDKTZVn7Ouq3UBoyE"></iframe>
+    </div>
+    <script type="text/javascript">
+        function checkScreenSize() {
+          var viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+          if (viewportWidth <= 1000) {
+            window.location.href = "https://docs.google.com/document/d/1aIfFyGkYQpSUS8-wsfbsjXvzDLUDKTZVn7Ouq3UBoyE";
+          }
+        }
+        window.addEventListener("load", checkScreenSize);
+        window.addEventListener("resize", checkScreenSize);
+      </script>      
+  </body>
+</html>
