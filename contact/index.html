@@ -126,12 +126,10 @@ p {
     .container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .card {
-  width: 40%;
+  width: 70%;
   background-color: #fff;
   box-shadow: 0px 0px 10px 0px #ccc;
   border-radius: 10px;
@@ -191,7 +189,22 @@ p {
         transform: scale(1);
       }
     }
+    .post-button {
+        background-color: #af08dd;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        }
 
+        .post-button:hover {
+        box-shadow: 0 12px 16px 0 rgba(94, 0, 153, 0.24), 0 17px 50px 0 rgba(82, 0, 125, 0.13);
+        transform: translateY(-2px);
+        }
 </style>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
   <head>
@@ -260,13 +273,16 @@ p {
         </header>
     </body>
 
-      <section class="section section--offset-y section--featureText " data-color-theme="light-pink">
-          <div class="text-stack">
-          </div>
-          <div class="text-stack">
-            <div style="text-align: center; font-family: MessinaSans, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif; font-size: 20px;">
+      <section>
+            <div style="text-align: center; font-family: MessinaSans, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif;">
+                <div class="card-header">
                 <p>We strive to provide the best service possible. Email us to begin using our genetic screening service. If you have any questions or concerns, if you'd like to make a donation, or even if you'd just like to chat, please don't hesitate to contact us.</p>
-              </div>
+                <br><br><br><br><br><br><br><br><br><br>
+                <a href="https://opengenetics.co/forum">
+                    <button class="post-button">View OpenGenetics Forum</button>
+                  </a>
+            </div>
+            <section class="section section--offset-y section--featureText " data-color-theme="light-pink">
             <div class="text-stack__content flow">
                 <div class="container">
                     <div class="card">
@@ -289,7 +305,8 @@ p {
                         </div>
                       </div>
                     </div>
-                  </div>                     
+                  </div>      
+                </section>               
       </section>
 
 
