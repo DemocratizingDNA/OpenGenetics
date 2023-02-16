@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>404 - Page Not Found</title>
+    <style>
+        :root {
+          --primary-color: #7B36CC;
+          --secondary-color: #E3D3F7;
+        }
+        
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+        
+        body {
+          background-color: var(--primary-color);
+          font-family: 'Helvetica Neue', sans-serif;
+          color: white;
+        }
+        
+        header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem 2rem;
+          background-color: var(--secondary-color);
+          color: var(--primary-color);
+        }
+        
+        header h1 {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+        
+        header a {
+          color: var(--primary-color);
+          text-decoration: none;
+        }
+        
+        /* Main content */
+        main {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 4rem 2rem;
+        }
+        
+        main h2 {
+          font-size: 3rem;
+          margin-bottom: 2rem;
+        }
+        
+        main p {
+          font-size: 1.2rem;
+          margin-bottom: 2rem;
+        }
+        
+        /* Button */
+        .button {
+          display: inline-block;
+          background-color: var(--secondary-color);
+          color: var(--primary-color);
+          padding: 1rem 2rem;
+          border-radius: 4px;
+          text-decoration: none;
+          font-weight: bold;
+          transition: background-color 0.2s;
+          animation: pulse 2s infinite;
+        }
+        
+        .button:hover {
+          background-color: white;
+          color: var(--primary-color);
+          animation: none;
+        }
+        
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.008);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+      </style>
+  </head>
+  <body>
+    <header>
+      <h1>OpenGenetics</h1>
+    </header>
+    <main>
+      <h2>404 - Page Not Found</h2>
+      <p>We're sorry, the page you requested could not be found.</p>
+      <a href="/" class="button">Go Home</a>
+    </main>
+  </body>
+</html>
